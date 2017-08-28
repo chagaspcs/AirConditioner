@@ -56,7 +56,7 @@
  *  Métodos construtores das classes usadas.
  */
 mkl_PITInterruptInterrupt pit(PIT_Ch0);
-dsf_SerialDisplays disp(gpio_PTC7, gpio_PTC0,gpio_PTC3);
+dsf_SerialDisplays disp(gpio_PTA1, gpio_PTA2,gpio_PTA4);
 
 
 /*!
@@ -90,7 +90,7 @@ int main() {
    *  Escreve no display o número "2019".
    */
   disp.clearDisplays();
-  disp.writeWord(2019);
+  disp.writeWord(2222);
 
   while (true) { }
   return 0;
